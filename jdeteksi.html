@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Zat Berbahaya</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="progress-bar"><div id="progress"></div></div>
+        <h1 id="pertanyaan"></h1>
+        <div id="jawaban-container">
+            <button class="button ya" onclick="jawab('ya')">✔️ Ya</button>
+            <button class="button tidak" onclick="jawab('tidak')">❌ Tidak</button>
+        </div>
+        <button class="toggle-mode" onclick="toggleMode()">🌙/☀️</button>
+    </div>
+</body>
+</html>
