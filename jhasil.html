@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Diagnosa</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hasil Diagnosa</h1>
+        <div id="hasil-container">
+            <p id="hasil"></p>
+        </div>
+        <a href="jdeteksi.html" class="button">🔄 Coba Lagi</a>
+        <button class="toggle-mode" onclick="toggleMode()">🌙/☀️</button>
+    </div>
+    <script>
+        document.getElementById("hasil").innerText = localStorage.getItem("hasilDiagnosa");
+    </script>
+</body>
+</html>

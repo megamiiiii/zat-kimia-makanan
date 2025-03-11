@@ -1,0 +1,89 @@
+/* Warna dasar */
+:root {
+    --bg-color: linear-gradient(to right, #1e3c72, #2a5298);
+    --text-color: #ffffff;
+    --button-bg: #4caf50;
+    --button-hover: #388e3c;
+    --box-bg: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode {
+    --bg-color: linear-gradient(to right, #121212, #2c3e50);
+    --text-color: #f0f2f5;
+    --button-bg: #ff9800;
+    --button-hover: #e68900;
+}
+
+/* Global */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 5% auto;
+    background: var(--box-bg);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+/* Tombol */
+.button {
+    display: inline-block;
+    background-color: var(--button-bg);
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: var(--button-hover);
+}
+
+.ya {
+    background-color: #28a745;
+}
+
+.tidak {
+    background-color: #dc3545;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#progress {
+    height: 100%;
+    width: 0%;
+    background: #4caf50;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Tombol Mode */
+.toggle-mode {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
