@@ -41,13 +41,13 @@ function jawab(respon) {
 function diagnosa() {
     let hasilDiagnosa = jawaban.includes("C3") ? "⚠️ Makanan ini kemungkinan mengandung zat berbahaya!" : "✅ Tidak ditemukan indikasi zat berbahaya.";
     localStorage.setItem("hasilDiagnosa", hasilDiagnosa);
-    window.location.href = "hasil.html";
+    window.location.href = "jhasil.html";
 }
 
 function toggleMode() {
     document.body.classList.toggle("dark-mode");
 }
 
-if (window.location.pathname.includes("deteksi.html")) {
+if (window.location.pathname.includes("jdeteksi.html")) {
     tampilkanPertanyaan();
 }
